@@ -40,6 +40,22 @@ return [
         ],
 
         'mysql' => [
+            'read' => [
+                'host' => '127.0.0.1',
+            ],
+            'write' => [
+                'host' => '127.0.0.2'
+            ],
+            'driver'    => 'mysql',
+            'database'  => 'database',
+            'username'  => 'root',
+            'password'  => '',
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => 'tbl_',
+        ],
+
+       /* 'mysql' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
@@ -52,7 +68,7 @@ return [
             'prefix' => '',
             'strict' => true,
             'engine' => null,
-        ],
+        ],*/
 
         'pgsql' => [
             'driver' => 'pgsql',
